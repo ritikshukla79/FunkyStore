@@ -1,0 +1,32 @@
+header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 120px;
+    height: 80px;
+}
+
+.iconPhone {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 250px;
+}
+
+.iconHome {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 300px;
+
+}
+
+.iconLogin {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 200px;
+}

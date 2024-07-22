@@ -1,0 +1,13 @@
+.image-home {
+    width:100%;
+    height: 85vh
+}
+
+.shop-now {
+
+    left: 215px;
+    z-index: 1;
+    position: absolute;
+    bottom: 300px;
+    right: 1250px;
+}
