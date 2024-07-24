@@ -1,0 +1,22 @@
+.p-button {
+    padding: 5px 0 5px 0;
+    background-color: #06b6d4;
+    color: white;
+
+}
+
+.text-center {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    top: 200px;
+    left: 580px;
+
+}
+
+/* .toast{
+    height: 200px;
+    display: grid;
+    padding: 30px;
+} */
+

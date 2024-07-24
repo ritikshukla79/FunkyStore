@@ -1,0 +1,36 @@
+.cart {
+    border: 1px solid #ddd;
+    padding: 20px;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    right: 5%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .hello{
+    position: relative;
+    right: 25%;
+    width: 50%;
+  }
+  
+  .total {
+    width: 50%;
+    position: absolute;
+    top:10%;
+    font-weight: bold;
+    text-align: right;
+  }
+
+  .emptyCart {
+    width: 30%;
+    height: 30%; 
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  
+  }
