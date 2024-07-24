@@ -14,6 +14,7 @@ export const productQuery = createApi({
     const result = await fetchBaseQuery({ baseUrl: 'https://api.escuelajs.co/api/v1/' })(args, api, extraOptions);
     return result;
   },
+  keepUnusedDataFor: 1,
   endpoints: (builder) => ({
     getProducts: builder.query({
       query: () =>'/products',

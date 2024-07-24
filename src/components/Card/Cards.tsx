@@ -9,7 +9,16 @@ import Typography from '@mui/joy/Typography';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import { SxProps, Theme } from '@mui/system';
 
-function Cards({name , price , image , category}) {
+interface CardsProps {
+  name: string;
+  price: number;
+  image: string;
+  category: string;
+  onAddToCart: () => void;
+
+}
+
+function Cards({name , price , image , category , onAddToCart}: CardsProps) {
   // Define the sx prop with correct typing
   const cardSx: SxProps<Theme> = {
     width: 230,
@@ -32,7 +41,7 @@ function Cards({name , price , image , category}) {
       <CardOverflow>
         <AspectRatio sx={aspectRatioSx}>
           <img
-            src={image}
+            src={image[0]}
             loading="lazy"
             alt=""
           />
@@ -67,7 +76,7 @@ function Cards({name , price , image , category}) {
         </Typography>
       </CardContent>
       <CardOverflow>
-        <Button variant="solid" color="danger" size="sm">
+        <Button variant="solid" color="danger" size="sm" onClick={onAddToCart}>
           Add to cart
         </Button>
       </CardOverflow>

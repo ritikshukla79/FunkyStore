@@ -1,0 +1,30 @@
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 70px;
+    margin-bottom: 15px;
+    background-color: rgb(176, 227, 245);
+  }
+  
+  .cart-item-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  
+  .cart-item-details {
+    flex-grow: 1;
+  }
+  
+  .quantity-control {
+    display: flex;
+    align-items: center;
+    width: 10px;
+    gap: 10px;
+  }
+  
+  /* .remove-button {
+    /* Add your desired styles for the remove button */
+  
+  

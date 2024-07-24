@@ -1,11 +1,21 @@
 header {
-    background-color: white;
+    /* background-color: #e3f2fd; */
+    background-color: #06b6d4;
     display: flex;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    color: white;
+
+}
+
+#badge {
+    color: white;
 }
 
 img {
-    width: 120px;
+    width: 100px;
     height: 80px;
 }
 
@@ -14,6 +24,14 @@ img {
     height: 20px;
     position: absolute;
     right: 250px;
+}
+
+.iconCart {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 79%;
+    bottom: 3px;
 }
 
 .iconHome {
@@ -28,5 +46,9 @@ img {
     width: 20px;
     height: 20px;
     position: absolute;
-    right: 200px;
+    right: 150px;
+}
+
+.cartItemCount{
+    color: rgb(28, 141, 202)
 }
