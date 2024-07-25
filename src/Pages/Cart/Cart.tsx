@@ -11,13 +11,17 @@ function Cart() {
   const dispatch = useDispatch();
   let total = 0;
   const handleRemove = (product) => {
-    console.log(product);
     dispatch(removeFromCart(product));
   };
 
   const listItem = (product, qty: number) => {
     total += product.price * qty;
-    const image = JSON.parse(product.images);
+    let image = '';
+    try {
+      image = JSON.parse(product.images);
+  } catch (error) {
+      image = product.images[0];
+  }
     return (
       <div className="surface-border hello">
         <div className="col-12 " key={product.id}>

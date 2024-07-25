@@ -26,7 +26,6 @@ export default function Product1() {
   if (error) return <div>Error occurred</div>;
 
     const handleAddToCart = (product) => {
-      console.log(product);
       dispatch(addToCart(product));
       toast.current?.show({severity:'success', summary: 'Success', detail:'Item Added to Cart', life: 3000});
     };
