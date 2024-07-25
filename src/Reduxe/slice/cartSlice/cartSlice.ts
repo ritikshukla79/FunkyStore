@@ -22,7 +22,6 @@ export const cartSlice = createSlice({
       const itemExists = state.cartItems.find((item) => {
         return item.product.id === action.payload.id;
       });
-      console.log(itemExists);
       if (itemExists) {
         itemExists.qty++;
       } else {
